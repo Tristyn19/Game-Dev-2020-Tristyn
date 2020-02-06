@@ -1,9 +1,26 @@
+<html>
+<head>
+<script>
+function myRunFunction(){
+  document.getElementById('myDiv01').innerHTML += '<br>myRunFunction running'
+}
+</script>
+</head>
+<body>
+
 <h1 align=center>T3A03-kitchen-sink-tristyn.html</h1>
 
 <input type="text" id="myTextIn01" value="5"><br><br> 
     
 <input type="button" value="Kitchen Sink" onMouseOver="{
-     document.getElementById('myDiv01').innerHTML = document.getElementById('myTextIn01').value // note: use value not innerHTML                                                    
+     document.getElementById('myDiv01').innerHTML = document.getElementById('myTextIn01').value // note: use value not innerHTML 
+   for (let myLoop = 0; myLoop < 5; myLoop++){ 
+  myRunFunction() 
+}
+                                                 
 }"><br><br>
 
 <div id='myDiv01'>...</div><br>
+
+</body>
+</html>
