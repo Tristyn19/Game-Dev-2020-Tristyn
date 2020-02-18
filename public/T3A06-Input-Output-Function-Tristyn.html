@@ -4,7 +4,6 @@
 
 <input type="button" value="Show 1" onMouseOver="{
 	document.getElementById('myDiv01').innerHTML = 'myText01 = ' + document.getElementById('myText01').value
-
 }"><br>
 
 <div id="myDiv01">...</div><br>
@@ -13,7 +12,6 @@
 
 <input type="button" value="Show 2" onMouseOver="{
 	document.getElementById('myDiv02').innerHTML = 'myText02 = ' + document.getElementById('myText02').value
-
 }"><br>
 
 <div id="myDiv02">...</div><br>
@@ -22,7 +20,6 @@
 
 <input type="button" value="Show 3" onMouseOver="{
 	document.getElementById('myDiv03').innerHTML = 'myText03 = ' + document.getElementById('myText03').value
-
 }"><br>
 
 <div id="myDiv03">...</div><br>
@@ -31,7 +28,6 @@
 
 <input type="button" value="Show 4" onMouseOver="{
 	document.getElementById('myDiv04').innerHTML = 'myText04 = ' + document.getElementById('myText04').value
-
 }"><br>
 
 <div id="myDiv04">...</div><br>
@@ -40,7 +36,53 @@
 
 <input type="button" value="Show 5" onMouseOver="{
 	document.getElementById('myDiv05').innerHTML = 'myText05 = ' + document.getElementById('myText05').value
-
 }"><br>
 
 <div id="myDiv05">...</div><br>
+
+<input type="text" id="myText06" value="Everything Burns" placeholder="Favourite Song"><br>
+
+<input type="button" value="Show 6" onMouseOver="{
+	document.getElementById('myDiv06').innerHTML = 'myText06 = ' + document.getElementById('myText06').value
+}"><br>
+
+<div id="myDiv06">...</div><br>
+
+<input type="text" id="myText07" value="Pizza" placeholder="Favourite Food"><br>
+
+<input type="button" value="Show 7" onMouseOver="{
+	document.getElementById('myDiv07').innerHTML = 'myText07 = ' + document.getElementById('myText07').value
+}"><br>
+
+<div id="myDiv07">...</div><br>
+
+<input type="text" id="myText08" value="Huskey" placeholder="Favourite Animal"><br>
+
+<input type="button" value="Show 8" onMouseOver="{
+	document.getElementById('myDiv08').innerHTML = 'myText08 = ' + document.getElementById('myText08').value
+}"><br>
+
+<div id="myDiv08">...</div><br>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+  <input type="range" id="a" value="50">100
+  +<input type="number" id="b" value="50">
+  =<output name="x" for="a b"></output>
+</form>
+
+<input type="text" id="myTextIn1" value="3.45" size="30">  + <input type="text" id="myTextIn2" value="6.78" size="30"> 
+
+<input id="myButton124" type="button" value="Add the numbers" onclick="{
+
+   var my1 = document.getElementById('myTextIn1').value  
+   var my2 = document.getElementById('myTextIn2').value  
+   document.getElementById('myDiv124').innerHTML =   'Numbers added as strings ' +  my1 + ' + ' +  my2 + ' = ' +  (my1 + my2)  + '<br>'   
+   document.getElementById('myDiv124').innerHTML +=  'Numbers added as integers ' +  my1 + ' + ' +  my2 + ' = ' +  (parseInt(my1) + parseInt(my2))  + '<br>'   
+   document.getElementById('myDiv124').innerHTML +=  'Numbers added as rounded integers ' +  my1 + ' + ' +  my2 + ' = ' +  (Math.round(my1) + Math.round(my2))  + '<br>'                                                      
+   document.getElementById('myDiv124').innerHTML +=  'Numbers added as floating point (decimal) numbers ' +  my1 + ' + ' +  my2 + ' = ' +  (parseFloat(my1) + parseFloat(my2))  + '<br>'                                         
+   document.getElementById('myDiv124').innerHTML +=  'Numbers added using *1 trick ' +  my1 + ' + ' +  my2 + ' = ' +  (my1*1 + my2*1)  + '<br>'                                                       
+                                                             
+                                                              
+}"><br><br>
+
+<div id='myDiv124'>...</div><br>

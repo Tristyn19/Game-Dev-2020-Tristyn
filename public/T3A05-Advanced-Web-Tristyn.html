@@ -13,15 +13,21 @@
 </ol>
 
 <form name="myFormName" id="myFormId" method="GET" action="aURL.com">
-First Name: <input type="text" value="Tristyn" placeholder="First Name"><br><br>
-Gender: <input type="radio" name="gender"><br><br>
-AC/DC: <input type="checkbox"><br><br>
-Password: <input id="myPass" type="password"><br><br>
+First Name: <input type="text" value="Tristyn" placeholder="First Name"><br>
+Gender: <input type="radio" name="gender"><br>
+AC/DC: <input type="checkbox"><br>
+Username: <input id="myUser" type="username"><br>
+Button: <input type="button" value="Show Username" onclick="{
+	alert('Your Username is: ' + document.getElementById('myUser').value)
+}"><br>
+Password: <input id="myPass" type="password"><br>
 Button: <input type="button" value="Show Password" onclick="{
 	alert('Your Password is: ' + document.getElementById('myPass').value)
-}"><br><br>
+}"><br>
 
-<textarea rows=10 cols=70 wrap>
+ <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor"><br>
+<br><textarea rows=5 cols=30 wrap>
 I can write here
 </textarea>
 
@@ -31,15 +37,32 @@ I can write here
 	<option value+'C'>Sea
 </select><br><br>
 
-Radio: <input type="radio" name="gender" value="male" checked> Male<br>
+Radio:<br> <input type="radio" name="gender" value="male" checked> Male<br>
 	<input type="radio" name="gender" value="female"> Female<br>
-	<input type="radio" name="gender" value="other'> Other
+	<input type="radio" name="gender" value="other"> Other
+<br><br>
 
-<br>
+<label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2021-12-31">
+<label for="end">End date:</label>
+
+<input type="date" id="end" name="trip-end"
+       value="2018-07-22"
+       min="2018-01-01" max="2021-12-31"><br>
+
+<label for="appt">Choose a time for anything:</label>
+
+<input type="time" id="appt" name="appt"
+       min="00:00" max="24:00" required>
+
+<small>Do Anything from 12am to 12pm</small><br>
+
 <input type="submit"><input type="reset">
 </form>
 
-
 <hr>
 
-<iframe src="https://www.csstutorial.net/" width="90%" height="300px"></iframe>
+<iframe src="https://html.com/" width="90%" height="300px"></iframe>
