@@ -1,0 +1,45 @@
+<h1 align=center>T3A08 Loops By Tristyn C</h1>
+
+<input id="myText01" type=text value="30">
+
+<input type="button" value="Loop" onclick="{ document.getElementById('myDiv01').innerHTML +=''
+for (myX=0; myX <= document.getElementById('myText01').value; myX++){
+ document.getElementById('myDiv01').innerHTML += '<br>Loop #:' + myX
+
+if (myX < 3){
+   document.getElementById('myDiv01').innerHTML +=', Less than Three'
+}
+ 
+if (myX == 5){
+   document.getElementById('myDiv01').innerHTML +=', It is a Five'
+ }
+
+ if (myX == 4){
+   document.getElementById('myDiv01').innerHTML +=', It is a Four'
+}
+
+if (myX == 3){
+   document.getElementById('myDiv01').innerHTML +=', It is a Three'
+
+if (myX == 6){
+   document.getElementById('myDiv01').innerHTML +=', It is a Six'
+}
+
+if (myX == 7){
+   document.getElementById('myDiv01').innerHTML +=', It is a Seven'
+}
+
+}
+ if (myX == 8){
+   document.getElementById('myDiv01').innerHTML +=', It is a eight'
+}
+ if (myX >= 10){
+   document.getElementById('myDiv01').innerHTML +=', Greater than nine'
+}
+ if (myX == 9){
+   document.getElementById('myDiv01').innerHTML +=', It is a nine'
+}
+}
+}">
+
+<div id="myDiv01">...</div>
