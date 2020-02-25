@@ -1,0 +1,36 @@
+<h1 align=center>T3A09 Variables Tristyn C </h1>
+
+<script>
+
+var myX=16
+let myY=19
+let myFirstName='Tristyn'
+let myLastName='Crawford'
+let myMomName='Dawn'
+let myDadName='Andrew'
+let myDog01='Hershey'
+let myDog02='Luna'
+let myDog03='Kaiser'
+let myDog04='Koda'
+let myCat01='Hansome'
+let myCat02='Kola'
+document.writeln('My myX Variable is ' + myX + '<br>') 
+document.writeln('My myY Variable is ' + myY + '<br>')
+document.writeln('My myFirstName Variable is ' + myFirstName + '<br>')
+document.writeln('My myLastName Variable is ' + myLastName + '<br>')
+document.writeln('My myMomName Variable is ' + myMomName + '<br>')
+document.writeln('My myDadName Variable is ' + myDadName + '<br>')
+document.writeln('My myDog01 Variable is ' + myDog01 + '<br>')
+document.writeln('My myDog02 Variable is ' + myDog02 + '<br>')
+document.writeln('My myDog03 Variable is ' + myDog03 + '<br>')
+document.writeln('My myDog04 Variable is ' + myDog04 + '<br>')
+document.writeln('My myCat01 Variable is ' + myCat01 + '<br>')
+document.writeln('My myCat02 Variable is ' + myCat02 + '<br>')
+</script>
+<hr>
+
+<input type=text placeholder='Enter Variable' id=myText01>
+<input type=button value='Set Variable' onclick="{
+	var x = document.getElementById('myText01').value
+ 	document.writeln('My x variable is ' + x )  
+}">
