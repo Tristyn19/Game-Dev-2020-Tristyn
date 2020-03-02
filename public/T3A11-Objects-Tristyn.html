@@ -1,0 +1,34 @@
+<h1 align=center>T3A11-Objects-Tristyn</h1>
+
+<input id="myText01" type=text value="dog">
+
+<input type="button" value="Show Object" onClick="{
+
+ myObject = {
+   'myDog' : document.getElementById('myText01').value,
+   'myDog01' : 'Huskey',
+   'myDog02' : 'Chihuahua',
+   'myDog03' : 'PomChi',
+}
+
+  document.getElementById('myDiv01').innerHTML = myObject.myDog01 + myObject.myDog02 + myObject.myDog03 + ' name : ' + myObject.myDog
+
+}">
+
+<div id=myDiv01>...</div>
+
+<input id="myText02" type=text value="cat">
+
+<input type="button" value="Show Object" onClick="{
+
+ myObject = {
+   'myCat' : document.getElementById('myText02').value,
+   'myCat01' : 'Savannah',
+   'myCat02' : 'Black Short Hair',
+}
+
+  document.getElementById('myDiv02').innerHTML = myObject.myCat01 + myObject.myCat02 + ' name : ' + myObject.myCat
+
+}">
+
+<div id=myDiv02>...</div>
