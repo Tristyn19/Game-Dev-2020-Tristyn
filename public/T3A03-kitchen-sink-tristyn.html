@@ -14,7 +14,7 @@ function myRunFunction(){
     
 <input type="button" value="Kitchen Sink" onMouseOver="{
      document.getElementById('myDiv01').innerHTML = document.getElementById('myTextIn01').value // note: use value not innerHTML 
-   for (let myLoop = 0; myLoop < 5; myLoop++){ 
+  for (let myLoop = 0; myLoop < document.getElementById('myTextIn01').value; myLoop++){ 
   myRunFunction() 
 }
                                                  
